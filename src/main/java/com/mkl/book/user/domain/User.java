@@ -30,7 +30,7 @@ public class User {
     @NotNull
     private String nickName;
 
-//    @Column(name = "create_date")
-//    private Calendar createDate;
+    @Column(name = "create_date")
+    private Calendar createDate;
 
 }

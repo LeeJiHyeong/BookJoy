@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.Calendar;
+
 @SpringBootTest
 public class UserControllerTest {
 
@@ -18,10 +20,12 @@ public class UserControllerTest {
     public void 회원가입테스트() {
 
         User user = new User();
-        user.setNickName("딕킴4");
-        user.setUserEmail("aaaaa2a2@naaaaaa.com");
+        user.setNickName("딕킴5");
+        user.setUserEmail("aaa22aa2a2@naaaaaa.com");
         user.setUserPassword("123123");
+        user.setCreateDate(Calendar.getInstance());
 
         this.userRepository.save(user);
+
     }
 }

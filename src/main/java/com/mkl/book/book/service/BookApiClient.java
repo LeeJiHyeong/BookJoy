@@ -1,9 +1,9 @@
-package com.mkl.book.bookAPI.service;
+package com.mkl.book.book.service;
 
-import com.mkl.book.bookAPI.DTO.BooksResponseDto;
-import com.mkl.book.bookAPI.DTO.Item;
-import com.mkl.book.bookAPI.domain.Book;
-import com.mkl.book.bookAPI.repository.BookRepository;
+import com.mkl.book.book.DTO.BooksResponseDto;
+import com.mkl.book.book.DTO.Item;
+import com.mkl.book.book.domain.Book;
+import com.mkl.book.book.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;

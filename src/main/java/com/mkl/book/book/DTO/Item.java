@@ -1,6 +1,6 @@
-package com.mkl.book.bookAPI.DTO;
+package com.mkl.book.book.DTO;
 
-import com.mkl.book.bookAPI.domain.Book;
+import com.mkl.book.book.domain.Book;
 import lombok.Data;
 
 @Data

@@ -1,0 +1,15 @@
+*{
+    font-family: 'Yusei Magic', sans-serif;
+  }
+  .list-group>a{
+         background-color:#19ce60;
+         color:white;
+   }
+   .navbar-brand{
+         font-size: 30px;
+         margin-left: 5px;
+   }
+   .navbar{
+         background: #19ce60;
+         
+     }

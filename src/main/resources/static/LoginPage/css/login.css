@@ -77,26 +77,19 @@ section{
     /* background-image: url(./imgs/logo-mobile.png);
     background-repeat: no-repeat;
     background-position: center left; */
-    background: #fff url(./imgs/logo-mobile.png) no-repeat center left 13px;
+    background: #fff url(/static/LoginPage/imgs/google.png) no-repeat center left 13px;
+    font: bold;
 }
 .btn:nth-of-type(2){
-    background: #898c9b url(./imgs/logo-email.png) no-repeat center left 13px;
+    background: #11ce00 url(/static/LoginPage/imgs/logo-naver.png) no-repeat center left 13px;
 }
 .btn:nth-of-type(3){
-    background: #11ce00 url(./imgs/logo-naver.png) no-repeat center left 13px;
-}
-.btn:nth-of-type(4){
-
-    background : lightslategrey url(./imgs/free-icon-github-733609.png) no-repeat center left 13px;
-    
+    background: lightslategrey url(/static/LoginPage/imgs/free-icon-github-733609.png) no-repeat center left 13px;
 }
 .btn:hover{
     opacity: 1;
 }
 
-.btn:nth-of-type(5){
-    background: #0076fe url(./imgs/logo-facebook.png) no-repeat center left 13px;
-}
 .or-text{
     display: block;
     text-align:center;

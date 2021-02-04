@@ -20,11 +20,10 @@ public class UserControllerTest {
     public void 회원가입테스트() {
 
         User user = new User();
-        user.setNickName("딕킴5");
-        user.setUserEmail("aaa22aa2a2@naaaaaa.com");
-        user.setUserPassword("123123");
-        user.setCreateDate(Calendar.getInstance());
-
+//        user.setNickName("딕킴5");
+//        user.setUserEmail("aaa22aa2a2@naaaaaa.com");
+//        user.setUserPassword("123123");
+//        user.setCreateDate(Calendar.getInstance());
         this.userRepository.save(user);
 
     }

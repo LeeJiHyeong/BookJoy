@@ -56,7 +56,7 @@ public class BookApiClient {
 
         List<Book> koreaBooks = KoreaBookBody.ListDtoToListEntity(KoreaBookBody.getItem());
         List<Book> foreignBooks = ForeignBookBody.ListDtoToListEntity(ForeignBookBody.getItem());
-        List<Book> books = Stream.concat(koreaBooks.stream(), foreignBooks.stream())
+        List<Book> books = Stream.concat(foreignBooks.stream(), koreaBooks.stream())
                 .collect(Collectors.toList());
 
         bookSaveAll(books);
@@ -77,7 +77,6 @@ public class BookApiClient {
     public void bookSaveAll(List<Book> books){
         books.stream().forEach(book -> {
             if(!booleanvalidateDuplicateBook(book)){
-                System.out.println(book);
                 bookRepository.save(book);
             }
             else{

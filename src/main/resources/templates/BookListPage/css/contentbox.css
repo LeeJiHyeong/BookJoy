@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.items{
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+    
+  }
+
+.item{
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+a{
+    color:#222;
+    text-decoration: none;
+}
+.caption{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0,0, 0.7);
+    color: white;
+    box-sizing: border-box;
+    padding-top: 50px;
+
+    /* display 0하면 애니메이션 효과를 못줌 */
+    opacity: 0;
+    transition: 0.5s;
+}
+.caption a{
+    color: white;
+    background-color: #19ce60;
+    padding: 7px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.caption a:hover{
+    background-color: #fff;
+    color:#000;
+}
+
+.caption h2{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.item:hover .caption{
+    opacity: 1;
+}
+
+#nav-bar{
+  background: #19ce60;
+  
+}
+.navbar-brand{
+  font-size: 30px;
+  margin-left: 5px;
+}
+.pagination>li>a{
+  color: #19ce60;
+}
+
+.btn-group{
+  margin-left: 35px;
+
+}
+.list-group>a{
+  background-color:#19ce60;
+  color:white;
+}

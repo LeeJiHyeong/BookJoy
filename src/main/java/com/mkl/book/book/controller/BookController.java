@@ -15,7 +15,7 @@ public class BookController {
         this.bookApiClient = bookApiClient;
     }
 
-    @GetMapping("/book")
+    @GetMapping("/api")
     public BooksResponseDto goBookPage(){
         return bookApiClient.requestBook();
     }

@@ -1,4 +1,4 @@
-package com.mkl.book.booktest.domain;
+package com.mkl.book.bookAPI.domain;
 
 import lombok.*;
 

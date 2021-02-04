@@ -1,9 +1,7 @@
-package com.mkl.book.booktest.DTO;
+package com.mkl.book.bookAPI.DTO;
 
-import com.mkl.book.booktest.domain.Book;
+import com.mkl.book.bookAPI.domain.Book;
 import lombok.Data;
-
-import java.util.List;
 
 @Data
 public class Item {

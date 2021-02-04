@@ -1,9 +1,8 @@
-package com.mkl.book.booktest.controller;
+package com.mkl.book.bookAPI.controller;
 
-import com.mkl.book.booktest.domain.Book;
-import com.mkl.book.booktest.service.BookDBService;
+import com.mkl.book.bookAPI.domain.Book;
+import com.mkl.book.bookAPI.service.BookDBService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

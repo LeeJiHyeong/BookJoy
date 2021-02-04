@@ -1,6 +1,6 @@
-package com.mkl.book.booktest.repository;
+package com.mkl.book.bookAPI.repository;
 
-import com.mkl.book.booktest.domain.Book;
+import com.mkl.book.bookAPI.domain.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

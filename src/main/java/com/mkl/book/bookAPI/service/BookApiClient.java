@@ -1,9 +1,9 @@
-package com.mkl.book.booktest.service;
+package com.mkl.book.bookAPI.service;
 
-import com.mkl.book.booktest.DTO.BooksResponseDto;
-import com.mkl.book.booktest.DTO.Item;
-import com.mkl.book.booktest.domain.Book;
-import com.mkl.book.booktest.repository.BookRepository;
+import com.mkl.book.bookAPI.DTO.BooksResponseDto;
+import com.mkl.book.bookAPI.DTO.Item;
+import com.mkl.book.bookAPI.domain.Book;
+import com.mkl.book.bookAPI.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

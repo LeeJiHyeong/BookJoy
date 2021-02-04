@@ -1,7 +1,7 @@
-package com.mkl.book.booktest.controller;
+package com.mkl.book.bookAPI.controller;
 
-import com.mkl.book.booktest.service.BookApiClient;
-import com.mkl.book.booktest.DTO.BooksResponseDto;
+import com.mkl.book.bookAPI.service.BookApiClient;
+import com.mkl.book.bookAPI.DTO.BooksResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

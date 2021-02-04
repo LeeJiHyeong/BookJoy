@@ -1,10 +1,8 @@
-package com.mkl.book.booktest.service;
+package com.mkl.book.bookAPI.service;
 
-import com.mkl.book.booktest.domain.Book;
-import com.mkl.book.booktest.repository.BookRepository;
+import com.mkl.book.bookAPI.domain.Book;
+import com.mkl.book.bookAPI.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

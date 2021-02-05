@@ -15,5 +15,10 @@ public class LoginController {
         this.userRepository = userRepository;
     }
 
+    @RequestMapping("/signInPage")
+    public String goSignInPage() {
+        return "login";
+    }
+
 
 }

@@ -1,6 +1,6 @@
-package com.mkl.book.booktest.DTO;
+package com.mkl.book.book.DTO;
 
-import com.mkl.book.booktest.domain.Book;
+import com.mkl.book.book.domain.Book;
 import lombok.Data;
 
 import java.util.List;

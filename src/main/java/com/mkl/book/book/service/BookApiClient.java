@@ -1,9 +1,9 @@
-package com.mkl.book.booktest.service;
+package com.mkl.book.book.service;
 
-import com.mkl.book.booktest.DTO.BooksResponseDto;
-import com.mkl.book.booktest.DTO.Item;
-import com.mkl.book.booktest.domain.Book;
-import com.mkl.book.booktest.repository.BookRepository;
+import com.mkl.book.book.DTO.BooksResponseDto;
+import com.mkl.book.book.DTO.Item;
+import com.mkl.book.book.domain.Book;
+import com.mkl.book.book.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -56,7 +55,7 @@ public class BookApiClient {
 
         List<Book> koreaBooks = KoreaBookBody.ListDtoToListEntity(KoreaBookBody.getItem());
         List<Book> foreignBooks = ForeignBookBody.ListDtoToListEntity(ForeignBookBody.getItem());
-        List<Book> books = Stream.concat(koreaBooks.stream(), foreignBooks.stream())
+        List<Book> books = Stream.concat(foreignBooks.stream(), koreaBooks.stream())
                 .collect(Collectors.toList());
 
         bookSaveAll(books);
@@ -77,7 +76,6 @@ public class BookApiClient {
     public void bookSaveAll(List<Book> books){
         books.stream().forEach(book -> {
             if(!booleanvalidateDuplicateBook(book)){
-                System.out.println(book);
                 bookRepository.save(book);
             }
             else{

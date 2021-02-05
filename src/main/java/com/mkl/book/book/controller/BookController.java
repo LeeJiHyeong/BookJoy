@@ -1,7 +1,7 @@
-package com.mkl.book.booktest.controller;
+package com.mkl.book.book.controller;
 
-import com.mkl.book.booktest.service.BookApiClient;
-import com.mkl.book.booktest.DTO.BooksResponseDto;
+import com.mkl.book.book.service.BookApiClient;
+import com.mkl.book.book.DTO.BooksResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,7 +15,7 @@ public class BookController {
         this.bookApiClient = bookApiClient;
     }
 
-    @GetMapping("/book")
+    @GetMapping("/api")
     public BooksResponseDto goBookPage(){
         return bookApiClient.requestBook();
     }
